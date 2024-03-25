@@ -6,6 +6,7 @@ fun main(args: Array<String>) {
     ispalindrome("baby")
     ispalindrome("wow")
 
+
 }
 //Write and invoke a function that given the string “Barnie bakes brown bagels
 //and buns” prints out a list of all the other words and characters making up the
@@ -48,13 +49,16 @@ fun circlevol(radius:Double){
 //isPalindrome(word: String): Boolean
 //that takes in a single word and returns true or false depending on whether the
 //word is a palindrome.
-fun ispalindrome(word:String){
+fun ispalindrome(word:String):Boolean{
     var newWord=word.reversed()
     if (newWord==word){
+
         println(true)
+        return true
     }
     else{
         println(false)
+        return false
     }
 
 }
