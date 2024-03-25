@@ -2,16 +2,19 @@ fun main(args: Array<String>) {
 //    stringExtract("Barnie bakes brown bagels and buns")
     intArrray(arrayOf(5,8,9))
     circlevol(4.5)
+    stringExtract("Barnie bakes brown bagels and buns")
+    ispalindrome("baby")
+    ispalindrome("wow")
+
 }
 //Write and invoke a function that given the string “Barnie bakes brown bagels
 //and buns” prints out a list of all the other words and characters making up the
 //string excluding all possible occurrences of the letter b.
-//fun stringExtract(sentence:String){
-// for (x in sentence){
-//     println(sentence.slice(1:))
-//
-//
-//    }
+fun stringExtract(sentence:String){
+   var newsentence=sentence.replace("b"," ")
+    println(newsentence)
+
+    }
 
 
 //}
@@ -45,12 +48,19 @@ fun circlevol(radius:Double){
 //isPalindrome(word: String): Boolean
 //that takes in a single word and returns true or false depending on whether the
 //word is a palindrome.
-fun ispalindrome(word:String):Boolean{
-    for(i in word){
-
-
-        if (word==i=>downTo){
-            println(true)}
+fun ispalindrome(word:String){
+    var newWord=word.reversed()
+    if (newWord==word){
+        println(true)
+    }
+    else{
+        println(false)
     }
 
 }
+
+
+
+
+
+
